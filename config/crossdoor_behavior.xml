@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute="BehaviorTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="BehaviorTree">
+        <Sequence>
+            <Fallback>
+                <Inverter>
+                    <Action ID="IsDoorClosed"/>
+                </Inverter>
+                <Fallback>
+                    <Action ID="OpenDoor"/>
+                    <RetryUntilSuccessful num_attempts="5">
+                        <Action ID="PickLock"/>
+                    </RetryUntilSuccessful>
+                    <Action ID="SmashDoor"/>
+                </Fallback>
+            </Fallback>
+            <Action ID="PassThroughDoor"/>
+        </Sequence>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Action ID="IsDoorClosed"/>
+        <Action ID="OpenDoor"/>
+        <Action ID="PassThroughDoor"/>
+        <Action ID="PickLock"/>
+        <Action ID="SmashDoor"/>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>

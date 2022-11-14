@@ -1,0 +1,8 @@
+ <root >
+     <BehaviorTree>
+        <Sequence>
+            <Action_A/>
+            <Action_B/>
+        </Sequence>
+     </BehaviorTree>
+ </root>

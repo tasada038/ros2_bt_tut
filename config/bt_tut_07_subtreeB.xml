@@ -1,0 +1,5 @@
+<root>
+    <BehaviorTree ID="SubB">
+        <SaySomething message="Executing SubB" />
+    </BehaviorTree>
+</root>
