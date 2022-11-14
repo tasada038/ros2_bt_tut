@@ -15,7 +15,7 @@ The following commands download a package from a remote repository and install i
 ```shell
 mkdir -p ~/dev_ws/src
 cd ~/dev_ws/src
-git clone 
+git clone https://github.com/tasada038/ros2_bt_tut.git
 cd ~/dev_ws && colcon build
 ```
 
